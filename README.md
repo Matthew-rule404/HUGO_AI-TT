@@ -37,6 +37,16 @@ pyenv virtualenv-delete myenv
 # or: pyenv uninstall myenv
 ```
 
+```bash
+$ pyenv virtualenv 3.12.11 rknn-env_312
+$ pyenv virtualenvs
+  3.12.11/envs/rknn-env_312 (created from /home/hugo/.pyenv/versions/3.12.11)
+  rknn-env_312 (created from /home/hugo/.pyenv/versions/3.12.11)
+$ pyenv activate rknn-env_312
+(rknn-env_312) [17:25:59 hugo@rock-5b-01:~]$ df -h
+```
+
+
 `pyenv virtualenv` のオプションは **下層の作成コマンド（`virtualenv` / `venv` / `conda`）にフォワード**されます。利用可能なフラグは環境に依存するため、**`pyenv virtualenv --help`** で確認してください。([GitHub][6])
 
 ### よく使う環境変数
